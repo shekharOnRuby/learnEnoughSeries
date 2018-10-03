@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+puts 'hello world'
+print 'one', 'two', 'three'
+puts 'one', 'two', 'three'
+
+x = "foo"
+y = ""
+puts "-----"
+puts (x && y)
+puts "-----"
+puts (!!(x&&y))
+puts "-----"
+
+puts "-----"
+ puts (x || y)
+ puts "-----"
+ puts (!!(x||y))
+ puts "-----"
