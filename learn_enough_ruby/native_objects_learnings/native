@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+
+def print_out(some_string)
+	puts some_string 
+end
+
+
+ print_out Math::PI
+puts Math.sqrt(2)
+puts Math.cos(2*Math::PI)
+
+tau = 2 * Math::PI
+
+print_out(tau.to_s.class)
+print_out("1.24e6".to_f)
+print_out("1.24e6".to_f.to_s)
+#print_out(Math.sqrt(-1))
+
+#Math.sqrt(-1)
+puts "######"
+require 'date'
+t = (Time.now.to_date)
+puts Date::DAYNAMES[t.wday] 
+
+puts "######"
+puts "Regular Expressions"
+
+zip_code = /\d{5}/
+
+puts "no match".match(zip_code).to_s
+puts "Beverley hills, 90210".match(zip_code).to_s
+
+puts "######"
+puts "Hashes"
+
+h = {name: "shekhar karande", password: "1234", password_confirmation: "1234"}
+
+if h[:password] == h[:password_confirmation] 
+puts "passwords match"
+end
+
